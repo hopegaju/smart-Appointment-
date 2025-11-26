@@ -1,4 +1,7 @@
 package com.example.patient_service.exception;
 
-public class PatientAlreadyExistsException {
+public class PatientAlreadyExistsException extends RuntimeException {
+    public PatientAlreadyExistsException(String message) {
+        super(message);
+    }
 }
